@@ -12,8 +12,8 @@ DinoPark.prototype.addDino = function(dinosaur){
 };
 
 DinoPark.prototype.removeDinoType = function(dinoType){
-    for (i = 0; i < this.enclosure.length; i++){
-        if(this.enclosure[i].type == dinoType) {
+    for (let i = 0; i < this.enclosure.length; i++){
+        if(this.enclosure[i].type === dinoType) {
             this.enclosure.splice(i, 1);
             i--;
         }
